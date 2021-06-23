@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<title>Don't click the buttons</title>
+		<h1 id="header">Don't click on the buttons and don't click on something first if you do...</h1>
+		<button onclick="somethingonclick()">Something</button>
+		<button onclick="somethingonclick2()">Something Else</button>
+		<script>
+			function somethingonclick(){
+				document.getElementById('header').innerHTML="click on something else if you dare..."
+			}
+			function somethingonclick2(){
+				document.getElementById('header').innerHTML="DON'T CLICK ON THIS LINK: rebrand.ly/if-you-dare"
+			}
+	
+		</script>
+</html>
